@@ -10,7 +10,7 @@ module.exports = {
     },
     devServer: {
         hot: true
-    }
+    },
     module: {
         rules: [{
             test: /\.vue$/,
@@ -18,10 +18,10 @@ module.exports = {
         }]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Vue Webpack Demo',
-            inject: true
-        }),
+        // new HtmlWebpackPlugin({
+        //     title: 'Vue Webpack Demo',
+        //     inject: true
+        // }),
         new VueLoaderPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],
