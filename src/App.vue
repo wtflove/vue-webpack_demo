@@ -4,8 +4,8 @@
         <x-button>submit</x-button>
     </div>
 </template>
-<!-- <script>
-// import { XButton } from 'vux'
+<script>
+import { XButton } from 'vux'
 // const XButton = require('vux').default
 
 export default {
@@ -13,4 +13,4 @@ export default {
         XButton
     }
 }
-</script> -->
+</script>

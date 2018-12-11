@@ -1,8 +1,9 @@
 const vuxLoader = require('vux-loader')
 const path = require('path')
-const { VueLoaderPlugin } = require('vue-loader')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
+
 const webpackConfig = {
     mode: 'development',
     entry: {
@@ -24,7 +25,7 @@ const webpackConfig = {
                 ]
             },
             {
-                test: /\.js$/,
+                test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
@@ -46,7 +47,7 @@ const webpackConfig = {
     resolve: {
         alias: {
             'vux$': '../node_modules/vux',
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.common.js'
         },
         extensions: ['*', '.js', '.vue', '.json']
     },

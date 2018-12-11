@@ -5,7 +5,7 @@ import path from 'path'
 // import { Actionsheet } from 'vux'
 // import { XButton } from 'vux'
 
-Vue.component('x-button', path.resolve('vux','src/components/x-button/index.vue'))
+// Vue.component('x-button', XButton)s
 // window.addEventListener('load', function() {
 // new Vue({
 //     el: '#app',
@@ -17,7 +17,9 @@ Vue.component('x-button', path.resolve('vux','src/components/x-button/index.vue'
 
 new Vue({
     el: '#app',
-    render: h => h(App)
+    // render: h => h(App)
+    template: '<App/>',
+    components: { App }
 })
 
 // })
