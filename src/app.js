@@ -27,7 +27,6 @@ console.log(User)
 
 new Vue({
     el: '#app',
-    // render: h => h(User)
     render: h => h(User)
     // render: h => h('div', 'Hello World!')
     // components: {
