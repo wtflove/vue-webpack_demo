@@ -33,6 +33,12 @@ const webpackConfig = {
                         presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
@@ -47,7 +53,7 @@ const webpackConfig = {
     resolve: {
         alias: {
             'vux$': '../node_modules/vux',
-            'vue$': 'vue/dist/vue.common.js'
+            'vue$': 'vue/dist/vue.esm.js'
         },
         extensions: ['*', '.js', '.vue', '.json']
     },
